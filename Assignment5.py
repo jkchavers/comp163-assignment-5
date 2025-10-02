@@ -1,4 +1,5 @@
-
+#'''
+#Challenge 1
 current_number = int(input("Enter starting number: "))
 starting_num = current_number
 sequence = "Sequence:"
@@ -16,35 +17,31 @@ while current_number > 1:
     
     step_count += 1
 else:
-    print("Enter starting number:", starting_num)
+    #print("Enter starting number:", starting_num)
     print("Sequence:", sequence)
     print("Steps:", step_count)
 
+#'''
 #Challenge 2
 '''
-    current_number = int(input("Enter starting number: "))
-    step_count = 0
-    
-    while current_number >= 1:
+current_number = int(input("Enter a number: "))
+step_count = 0
+starting_num = current_number
+
+'''
+   
+'''
+#Challenge 3
+current_number = int(input("Enter starting number: "))
+step_count = 0
+while current_number >= 1:
         
-            if current_number % 2 == 0:
-                current_number /= 2
-            else:
-                current_number = current_number * 3 + 1
+    if current_number % 2 == 0:
+        current_number /= 2
+    else:
+        current_number = current_number * 3 + 1
     
-            step_count += 1
-    
-    #Challenge 3
-    current_number = int(input("Enter starting number: "))
-    step_count = 0
-    while current_number >= 1:
-        
-        if current_number % 2 == 0:
-            current_number /= 2
-        else:
-            current_number = current_number * 3 + 1
-    
-        step_count += 1
+    step_count += 1
 '''
    
     
