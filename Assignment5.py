@@ -1,4 +1,4 @@
-#'''
+'''
 #Challenge 1
 current_number = int(input("Enter starting number: "))
 starting_num = current_number
@@ -21,13 +21,28 @@ else:
     print("Sequence:", sequence)
     print("Steps:", step_count)
 
-#'''
+'''
 #Challenge 2
 '''
-current_number = int(input("Enter a number: "))
+user_number = int(input("Enter a number: "))
 step_count = 0
-starting_num = current_number
+prime = True
 
+
+for number in range(2,user_number - 1):
+    if (user_number % number == 0):
+        
+        prime = False
+
+        
+if prime == True:
+    print(user_number," is prime!")
+elif prime == False:
+    print(user_number,"is not prime")
+    
+
+        
+    
 '''
    
 '''
