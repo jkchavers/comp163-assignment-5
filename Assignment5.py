@@ -1,8 +1,8 @@
-'''
 #Challenge 1
+print("=== Challenge 1: Collatz Conjecture ===")
 current_number = int(input("Enter starting number: "))
 starting_num = current_number
-sequence = "Sequence:"
+sequence = ""
 step_count = 0
 
 sequence += " " + str(starting_num)
@@ -18,12 +18,13 @@ while current_number > 1:
     step_count += 1
 else:
     #print("Enter starting number:", starting_num)
-    print("Sequence:", sequence)
-    print("Steps:", step_count)
+    print(f"Sequence:{sequence}")
+    print("Steps:",step_count)
 
-'''
+
 #Challenge 2
-'''
+print()
+print("=== Challenge 2: Prime Number Checker ===")
 user_number = int(input("Enter a number: "))
 step_count = 0
 prime = True
@@ -36,25 +37,24 @@ for number in range(2,user_number - 1):
 
         
 if prime == True:
-    print(user_number," is prime!")
+    print(f"Testing divisors from 2 to {user_number - 1}...")
+    print(f"{user_number} is prime!")
 elif prime == False:
-    print(user_number,"is not prime")
-    
+    print(f"Testing divisors from 2 to {user_number - 1}... {user_number} is not prime (divisible by 3)")
 
-        
-    
-'''
-   
-#'''
 #Challenge 3
-
+print()
+print("=== Challenge 3: Multiplication Table ===")
 baseNums = [1,2,3,4,5,6,7,8,9,10]
 
 rowString = ""
 
 print("Multiplication Table")
 
-
+for headerNum in range(0,10):
+    print(f"{baseNums[headerNum]:3}",end="")
+    
+print()
 for row in range(0,10):
 
     print(f"{baseNums[row]:2}",end="")
@@ -64,7 +64,7 @@ for row in range(0,10):
         print(f"{baseNums[row] * baseNums[column]:4}",end="")
     
     print()
-#'''
+
    
     
    
